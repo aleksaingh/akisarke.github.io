@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>akisarke@links:~$</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0d0d0d;
+    color: #c8c8c8;
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 32px 24px;
+    min-height: 100vh;
+    cursor: text;
+  }
+
+  .line {
+    display: block;
+    white-space: pre;
+    opacity: 0;
+    animation: appear 0s forwards;
+  }
+
+  @keyframes appear { to { opacity: 1; } }
+
+  .g  { color: #39d353; }
+  .c  { color: #58d8f0; }
+  .y  { color: #f0c040; }
+  .p  { color: #b48eff; }
+  .m  { color: #555;    }
+  .b  { font-weight: 700; }
+
+  .prompt::before {
+    content: 'akisarke@links:~$ ';
+    color: #39d353;
+    font-weight: 700;
+  }
+
+  .typed {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #39d353;
+    width: 0;
+    animation: type 0.6s steps(20, end) forwards, blink-caret 0.75s step-end 4;
+  }
+  @keyframes type        { to { width: 100%; } }
+  @keyframes blink-caret { 0%,100%{border-color:#39d353} 50%{border-color:transparent} }
+
+  .cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1em;
+    background: #39d353;
+    vertical-align: text-bottom;
+    animation: blink 1s step-end infinite;
+    margin-left: 1px;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+  .d0  { animation-delay: 0.0s; }
+  .d1  { animation-delay: 0.1s; }
+  .d2  { animation-delay: 0.2s; }
+  .d3  { animation-delay: 0.3s; }
+  .d4  { animation-delay: 0.4s; }
+  .d5  { animation-delay: 0.5s; }
+  .d6  { animation-delay: 0.6s; }
+  .d7  { animation-delay: 0.7s; }
+  .d8  { animation-delay: 0.8s; }
+  .d9  { animation-delay: 0.9s; }
+  .d10 { animation-delay: 1.0s; }
+  .d11 { animation-delay: 1.1s; }
+  .d12 { animation-delay: 1.2s; }
+  .d13 { animation-delay: 1.3s; }
+  .d14 { animation-delay: 1.4s; }
+  .d15 { animation-delay: 1.5s; }
+  .d16 { animation-delay: 1.6s; }
+  .d17 { animation-delay: 1.7s; }
+  .d18 { animation-delay: 1.8s; }
+  .d19 { animation-delay: 1.9s; }
+  .d20 { animation-delay: 2.0s; }
+  .d21 { animation-delay: 2.1s; }
+  .d22 { animation-delay: 2.2s; }
+  .d23 { animation-delay: 2.3s; }
+  .d24 { animation-delay: 2.4s; }
+  .d25 { animation-delay: 2.5s; }
+  .d26 { animation-delay: 2.6s; }
+  .d27 { animation-delay: 2.7s; }
+  .d28 { animation-delay: 2.8s; }
+  .d29 { animation-delay: 2.9s; }
+  .d30 { animation-delay: 3.0s; }
+  .d31 { animation-delay: 3.1s; }
+  .d32 { animation-delay: 3.2s; }
+  .d33 { animation-delay: 3.3s; }
+  .d34 { animation-delay: 3.4s; }
+  .d35 { animation-delay: 3.5s; }
+
+  a { color: inherit; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .link-row a { color: #58d8f0; }
+  .link-row a:hover { color: #ffffff; }
+
+  /* Mobile: scale everything down, hide ls columns, keep terminal feel */
+  @media (max-width: 600px) {
+    body {
+      font-size: 11px;
+      padding: 18px 12px;
+      line-height: 1.7;
+    }
+
+    .prompt::before {
+      content: 'aki@links:~$ ';
+    }
+
+    /* Hide the clutter on mobile ls output */
+    .ls-meta { display: none; }
+
+    .link-row a { color: #58d8f0; }
+  }
+</style>
+</head>
+<body>
+
+<span class="line d0"><span class="m">Linux links-vm 6.1.0 #1 SMP x86_64 GNU/Linux</span></span>
+<span class="line d1"><span class="m">Last login: Sat Mar 21 18:42:03 2026 from 192.168.1.1</span></span>
+<span class="line d2"> </span>
+
+<span class="line d3 prompt"><span class="typed" style="animation-delay:0.3s; animation-duration:0.5s;">whoami</span></span>
+<span class="line d4"> </span>
+<span class="line d5"><span class="g b">aleksa</span></span>
+<span class="line d6"> </span>
+
+<span class="line d7 prompt"><span class="typed" style="animation-delay:0.7s; animation-duration:0.7s;">cat ~/.profile</span></span>
+<span class="line d8"> </span>
+<span class="line d9"><span class="c">name     </span>  akisarke <span class="m">(sarke / Aleksa)</span></span>
+<span class="line d10"><span class="c">bio      </span>  Professional retard named Aleksa.</span>
+<span class="line d11"><span class="c">location </span>  Serbia 🇷🇸</span>
+<span class="line d12"> </span>
+
+<span class="line d15 prompt"><span class="typed" style="animation-delay:1.5s; animation-duration:0.7s;">ls -la ~/links/</span></span>
+<span class="line d16"> </span>
+<span class="line d17"><span class="m">total 10</span></span>
+<span class="line d18"><span class="m ls-meta">drwxr-xr-x  akisarke  Mar 21 18:43  <span class="g">.</span></span></span>
+<span class="line d19"><span class="m ls-meta">drwxr-xr-x  akisarke  Mar 21 18:43  <span class="g">..</span></span></span>
+<span class="line d20 link-row"><span class="m ls-meta">-rw-r--r--  akisarke  </span><span class="p">github    </span>  →  <a href="https://github.com/aleksaingh" target="_blank">github.com/aleksaingh</a></span>
+<span class="line d21 link-row"><span class="m ls-meta">-rw-r--r--  akisarke  </span><span class="p">discord   </span>  →  <a href="https://discord.com/users/akisarke" target="_blank">discord.com/users/akisarke</a></span>
+<span class="line d22 link-row"><span class="m ls-meta">-rw-r--r--  akisarke  </span><span class="p">youtube   </span>  →  <a href="https://youtube.com/@akisarke" target="_blank">youtube.com/@akisarke</a></span>
+<span class="line d23 link-row"><span class="m ls-meta">-rw-r--r--  akisarke  </span><span class="p">tiktok    </span>  →  <a href="https://tiktok.com/@akisarke" target="_blank">tiktok.com/@akisarke</a></span>
+<span class="line d24 link-row"><span class="m ls-meta">-rw-r--r--  akisarke  </span><span class="p">instagram </span>  →  <a href="https://instagram.com/akisarke" target="_blank">instagram.com/akisarke</a></span>
+<span class="line d25 link-row"><span class="m ls-meta">-rw-r--r--  akisarke  </span><span class="p">reddit    </span>  →  <a href="https://reddit.com/u/akisarke" target="_blank">reddit.com/u/akisarke</a></span>
+<span class="line d26 link-row"><span class="m ls-meta">-rw-r--r--  akisarke  </span><span class="p">steam     </span>  →  <a href="https://steamcommunity.com/id/aleksaportal" target="_blank">steamcommunity.com/id/aleksaportal</a></span>
+<span class="line d27 link-row"><span class="m ls-meta">-rw-r--r--  akisarke  </span><span class="p">email     </span>  →  <a href="mailto:aleksasaric10@gmail.com">aleksasaric10@gmail.com</a></span>
+<span class="line d28 link-row"><span class="m ls-meta">-rw-r--r--  akisarke  </span><span class="p">paypal    </span>  →  <a href="https://paypal.me/akisarke" target="_blank">paypal.me/akisarke</a></span>
+<span class="line d29 link-row"><span class="m ls-meta">-rw-r--r--  akisarke  </span><span class="p">guns.lol  </span>  →  <a href="https://guns.lol/sarke" target="_blank">guns.lol/sarke</a></span>
+<span class="line d30"> </span>
+
+<span class="line d31 prompt"><span class="typed" style="animation-delay:3.1s; animation-duration:0.5s;">echo $MOTD</span></span>
+<span class="line d32"> </span>
+<span class="line d33"><span class="y">  click any link above to open i
